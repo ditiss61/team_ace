@@ -1,0 +1,2 @@
+﻿ Get-Eventlog Security -After (Get-Date).AddDays(-90)| where {$_.InstanceId -eq 4624 -or $_.InstanceId -eq 4634} |out-file C:\Users\Vishal\Desktop\LoginLOGOFF.txt
+ Get-eventlog System -EntryType Error |out-file C:\Users\Vishal\Desktop\error.txt
